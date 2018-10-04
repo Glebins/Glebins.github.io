@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" href="http://www.rw-designer.com/icon-image/5775-32x32x8.png">
+<meta charset="windows-1251">
+<title>Калькулятор степеней</title>
+</head>
+<nobr>
+<center><h1>Калькулятор, вычисляющий степени чисел</h1></center>
+<input type="text" id="name" placeholder="Введите значение">
+<style>
+#name
+{
+  padding: 100px;
+  margin-top: 20px;
+  margin-left: 40px;
+  color: #38f538;
+  background-color: #24c7d6;
+  font-size: 200%;
+}
+</style>
+<input type="text" id="qwer" placeholder="Введите степень">
+<style>
+#qwer
+{
+  margin-top: 20px;
+  margin-right: 40px;
+  padding: 100px;
+  margin: 5%;
+  color: #38f538;
+  background-color: #24c7d6;
+  font-size: 200%;
+}
+</style>
+</nobr>
+<br>
+<center><button onclick="toNumber()">Вычислить</button></center>
+<style>
+button
+{
+  color: #ffff00;
+  background-color: #00ff00;
+  font-size: 300%;
+}
+body
+{
+  background-color: #fdf5e6;
+  color: #ffa500;
+}
+</style>
+<script>
+  function toNumber()
+  {
+    var bit = (document.getElementById('name').value);
+    var ste = (document.getElementById('qwer').value);
+    var res = Math.pow(bit, ste);
+    alert(res);
+  }
+</script>
+</head>
